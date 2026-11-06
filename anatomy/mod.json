@@ -1,0 +1,14 @@
+{
+  "name": "anatomy",
+  "version": "0.1.0",
+  "shell": "^3.6",
+  "needs": [],
+  "skills": [
+    {
+      "name": "anatomy",
+      "about": "interactive isometric figures that explain how something works, sent with kiwi send --figure",
+      "source": "github.com/wheresryan22/anatomy",
+      "ref": "1482e8469b0a9e0d8cc18ea2740a01423d29ae80"
+    }
+  ]
+}

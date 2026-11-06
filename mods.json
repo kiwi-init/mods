@@ -1,0 +1,10 @@
+{
+  "mods": [
+    {
+      "name": "anatomy",
+      "does": "gives every agent a skill for interactive isometric figures, sent with kiwi send --figure",
+      "add": "kiwi mod add github.com/kiwi-init/mods/anatomy",
+      "needs": []
+    }
+  ]
+}
