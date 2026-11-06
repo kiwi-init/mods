@@ -4,6 +4,7 @@ The mods that come with [Channels](https://github.com/kiwi-init/channels), one f
 
 | Mod | What it does |
 | --- | --- |
+| [github](github) | The channel's GitHub tab: its pull requests, issues and checks, and a panel for each. It comes with Channels. |
 | [anatomy](anatomy) | Gives every agent a skill for interactive isometric figures, sent with `kiwi send --figure` |
 
 `mods.json` lists them for tools: each mod's name, what it does, how to add it and what it asks for.

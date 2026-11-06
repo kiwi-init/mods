@@ -1,6 +1,12 @@
 {
   "mods": [
     {
+      "name": "github",
+      "does": "the channel's GitHub tab: its pull requests, issues and checks, and a panel for each",
+      "add": "kiwi mod add github.com/kiwi-init/mods/github",
+      "needs": ["tab", "panel", "github"]
+    },
+    {
       "name": "anatomy",
       "does": "gives every agent a skill for interactive isometric figures, sent with kiwi send --figure",
       "add": "kiwi mod add github.com/kiwi-init/mods/anatomy",

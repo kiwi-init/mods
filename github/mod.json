@@ -1,0 +1,6 @@
+{
+  "name": "github",
+  "version": "1.0.0",
+  "shell": "^3.7",
+  "needs": ["tab", "panel", "github"]
+}
