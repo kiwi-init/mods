@@ -11,6 +11,12 @@
       "does": "gives every agent a skill for interactive isometric figures, sent with kiwi send --figure",
       "add": "kiwi mod add github.com/kiwi-init/mods/anatomy",
       "needs": []
+    },
+    {
+      "name": "terminals",
+      "does": "shows an agent's tmux pane or Rex block from its message or ⌘K, marks the ones waiting on you, and adds prefix K in tmux to go to one",
+      "add": "kiwi mod add github.com/kiwi-init/mods/terminals",
+      "needs": ["terminal", "command", "message-action"]
     }
   ]
 }

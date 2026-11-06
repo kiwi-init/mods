@@ -1,0 +1,7 @@
+{
+  "name": "terminals",
+  "version": "1.0.0",
+  "shell": "^3.9",
+  "author": "Kiwi Init",
+  "needs": ["terminal", "command", "message-action"]
+}
