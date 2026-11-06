@@ -8,9 +8,9 @@
     },
     {
       "name": "anatomy",
-      "does": "gives every agent a skill for interactive isometric figures, sent with kiwi send --figure",
+      "does": "gives every agent a skill for interactive isometric figures, and draws the figures they send live in chat",
       "add": "kiwi mod add github.com/kiwi-init/mods/anatomy",
-      "needs": []
+      "needs": ["render:figure"]
     },
     {
       "name": "terminals",
