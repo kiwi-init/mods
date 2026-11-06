@@ -6,9 +6,10 @@
   "skills": [
     {
       "name": "anatomy",
-      "about": "interactive isometric figures that explain how something works, sent with kiwi send --figure",
+      "about": "interactive figures that explain how things work",
       "source": "github.com/wheresryan22/anatomy",
-      "ref": "1482e8469b0a9e0d8cc18ea2740a01423d29ae80"
+      "ref": "1482e8469b0a9e0d8cc18ea2740a01423d29ae80",
+      "note": "In Channels, send a figure you built with `kiwi send --figure page.html`: it takes page-light.html beside it and a snapshot too."
     }
   ]
 }
