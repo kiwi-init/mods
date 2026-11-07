@@ -1,0 +1,8 @@
+{
+  "name": "publish-probe",
+  "version": "0.1.2",
+  "shell": "^3.2",
+  "needs": ["command"],
+  "description": "a check of kiwi mod publish (T7403); closed without merging",
+  "icon": "icon.svg"
+}
