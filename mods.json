@@ -24,6 +24,26 @@
       ]
     },
     {
+      "name": "calm",
+      "does": "covers the window while you're away with a quiet meadow and every channel: how many need you and its last line; a click opens one",
+      "add": "kiwi mod add github.com/kiwi-init/mods/calm",
+      "needs": [
+        "idle",
+        "channels"
+      ],
+      "commit": "12640801954c2ef8e7a214d45ab431101138146c",
+      "hash": "6f729c7a49961504f4b48c952f420873df08a9b9e4598180f73c0b339c538b35",
+      "icon": "icon.svg",
+      "files": [
+        "calm.css",
+        "calm.tsx",
+        "icon.svg",
+        "index.tsx",
+        "mod.json",
+        "settle.tsx"
+      ]
+    },
+    {
       "name": "anatomy",
       "does": "gives every agent a skill for interactive isometric figures, and draws the figures they send live in chat",
       "add": "kiwi mod add github.com/kiwi-init/mods/anatomy",
