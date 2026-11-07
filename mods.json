@@ -4,19 +4,46 @@
       "name": "github",
       "does": "the channel's GitHub tab: its pull requests, issues and checks, and a panel for each",
       "add": "kiwi mod add github.com/kiwi-init/mods/github",
-      "needs": ["tab", "panel", "github"]
+      "needs": [
+        "tab",
+        "panel",
+        "github"
+      ]
     },
     {
       "name": "anatomy",
       "does": "gives every agent a skill for interactive isometric figures, and draws the figures they send live in chat",
       "add": "kiwi mod add github.com/kiwi-init/mods/anatomy",
-      "needs": ["render:figure"]
+      "needs": [
+        "render:figure"
+      ]
     },
     {
       "name": "terminals",
       "does": "shows an agent's tmux pane or Rex block from its message or ⌘K, marks the ones waiting on you, and adds prefix K in tmux to go to one",
       "add": "kiwi mod add github.com/kiwi-init/mods/terminals",
-      "needs": ["terminal", "command", "message-action"]
+      "needs": [
+        "terminal",
+        "command",
+        "message-action"
+      ]
+    },
+    {
+      "name": "publish-probe",
+      "does": "a check of kiwi mod publish (T7403); closed without merging",
+      "add": "kiwi mod add github.com/kiwi-init/mods/publish-probe",
+      "needs": [
+        "command"
+      ],
+      "commit": "bc00f82de9c09a6bd056c4274c2ea5ee37076466",
+      "hash": "139733ef06db16cb3d1ae7c7c41aca64bd75baf843a954d9ad4f2308f22c7d03",
+      "files": [
+        "icon.svg",
+        "index.tsx",
+        "mod.json"
+      ],
+      "icon": "icon.svg",
+      "author": "ojowwalker77"
     }
   ]
 }
