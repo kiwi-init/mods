@@ -2,7 +2,7 @@ body {
   cursor: default;
 }
 
-.rest-glance {
+.afk-glance {
   position: absolute;
   bottom: max(7vh, 24px);
   left: max(5vw, 16px);
@@ -10,19 +10,19 @@ body {
   gap: 16px;
   width: max-content;
   max-width: min(780px, calc(100vw - 2 * max(5vw, 16px)));
-  animation: rest-rise 1.2s 0.6s var(--ease) both;
+  animation: afk-rise 1.2s 0.6s var(--ease) both;
 }
 
-.rest-count,
-.rest-calm,
-.rest-list {
+.afk-count,
+.afk-quiet,
+.afk-list {
   margin: 0;
   background: var(--float);
   box-shadow: var(--shadow-float);
 }
 
-.rest-count,
-.rest-calm {
+.afk-count,
+.afk-quiet {
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -34,17 +34,17 @@ body {
   white-space: nowrap;
 }
 
-.rest-count {
+.afk-count {
   color: var(--decide);
 }
 
-.rest-calm {
+.afk-quiet {
   gap: 10px;
   color: var(--ink-2);
   font-weight: 500;
 }
 
-.rest-calm::before {
+.afk-quiet::before {
   width: 8px;
   height: 8px;
   border: 1.5px solid currentcolor;
@@ -52,7 +52,7 @@ body {
   content: "";
 }
 
-.rest-list {
+.afk-list {
   display: grid;
   justify-self: start;
   gap: 2px;
@@ -62,7 +62,7 @@ body {
   list-style: none;
 }
 
-.rest-row {
+.afk-row {
   display: grid;
   grid-template-columns: 3ch minmax(0, 18ch) minmax(0, 1fr);
   align-items: baseline;
@@ -80,65 +80,65 @@ body {
   transition: background 0.2s;
 }
 
-.rest-row:hover {
+.afk-row:hover {
   background: var(--wash-2);
 }
 
-.rest-row:focus-visible {
+.afk-row:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 1px;
 }
 
-.rest-row > span {
+.afk-row > span {
   min-width: 0;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
-.rest-mark {
+.afk-mark {
   color: var(--ink-3);
   font-family: var(--mono);
   font-variant-numeric: tabular-nums;
 }
 
-.rest-name {
+.afk-name {
   color: var(--ink);
   font-weight: 500;
 }
 
-.rest-line.is-quiet {
+.afk-line.is-quiet {
   color: var(--ink-3);
 }
 
-.rest-row.is-news {
+.afk-row.is-news {
   color: var(--ink);
 }
 
-.rest-mark .count {
+.afk-mark .count {
   font-family: var(--ui);
 }
 
-.rest-row.is-news .rest-name {
+.afk-row.is-news .afk-name {
   font-weight: 600;
 }
 
-.rest-row.is-news .rest-line:not(.is-quiet) {
+.afk-row.is-news .afk-line:not(.is-quiet) {
   color: var(--decide);
 }
 
 @media (max-width: 40rem) {
-  .rest-row {
+  .afk-row {
     grid-template-columns: 3ch minmax(0, 1fr);
     row-gap: 2px;
   }
 
-  .rest-line {
+  .afk-line {
     grid-column: 2;
   }
 }
 
-@keyframes rest-rise {
+@keyframes afk-rise {
   from {
     opacity: 0;
     transform: translateY(8px);

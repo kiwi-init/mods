@@ -1,0 +1,8 @@
+{
+  "name": "afk",
+  "version": "1.0.0",
+  "shell": "^3.19",
+  "needs": ["afk", "channels"],
+  "icon": "icon.svg",
+  "settings": [{ "id": "after", "title": "AFK after", "type": "choice", "choices": ["Off", "1 min", "3 min", "5 min", "10 min"] }]
+}

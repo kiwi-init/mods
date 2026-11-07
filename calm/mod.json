@@ -1,8 +1,0 @@
-{
-  "name": "calm",
-  "version": "1.0.0",
-  "shell": "^3.14",
-  "needs": ["idle", "channels"],
-  "icon": "icon.svg",
-  "settings": [{ "id": "after", "title": "Calm after", "type": "choice", "choices": ["Off", "1 min", "3 min", "5 min", "10 min"] }]
-}
