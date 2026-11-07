@@ -1,4 +1,4 @@
-import "./calm.css"
+import "./afk.css"
 
 import { useEffect } from "react"
 
@@ -14,12 +14,12 @@ function Row({ row, still }: { row: Channel; still: boolean }) {
   const label = `${row.title}${needs ? `, ${row.needs} ${row.needs === 1 ? "needs" : "need"} you` : ""}, ${row.line ?? "quiet"}`
   return (
     <li>
-      <button type="button" className={cx("rest-row", needs && "is-news")} aria-label={label} onClick={() => open({ kind: "channel", code: row.code })}>
-        <span className="rest-mark">{needs ? <Count n={row.needs} loud /> : "·"}</span>
-        <span className="rest-name">
+      <button type="button" className={cx("afk-row", needs && "is-news")} aria-label={label} onClick={() => open({ kind: "channel", code: row.code })}>
+        <span className="afk-mark">{needs ? <Count n={row.needs} loud /> : "·"}</span>
+        <span className="afk-name">
           <Settle text={row.title} still={still} />
         </span>
-        <span className={cx("rest-line", !row.line && "is-quiet")}>
+        <span className={cx("afk-line", !row.line && "is-quiet")}>
           <Settle text={row.line ?? "quiet"} still={still} />
         </span>
       </button>
@@ -27,14 +27,14 @@ function Row({ row, still }: { row: Channel; still: boolean }) {
   )
 }
 
-export function Calm() {
+export function Afk() {
   const rows = (useChannels() ?? []).slice(0, SHOWN)
   const still = useStill()
   const total = rows.reduce((a, r) => a + r.needs, 0)
 
   useEffect(() => {
     const away = (e: Event): void => {
-      if (e.type === "pointerdown" && e.target instanceof Element && e.target.closest(".rest-row")) return
+      if (e.type === "pointerdown" && e.target instanceof Element && e.target.closest(".afk-row")) return
       e.preventDefault()
       leave()
     }
@@ -45,15 +45,15 @@ export function Calm() {
   }, [])
 
   return (
-    <section className="rest-glance" aria-label="What needs you">
+    <section className="afk-glance" aria-label="What needs you">
       {total > 0 ? (
-        <p className="rest-count">
+        <p className="afk-count">
           Needs you <Count n={total} loud />
         </p>
       ) : (
-        <p className="rest-calm">Nothing needs you. Enjoy your time, or go worry about something else.</p>
+        <p className="afk-quiet">Nothing needs you. Enjoy your time, or go worry about something else.</p>
       )}
-      <ul className="rest-list" aria-label="Channels">
+      <ul className="afk-list" aria-label="Channels">
         {rows.map((r) => (
           <Row key={r.code} row={r} still={still} />
         ))}
