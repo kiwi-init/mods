@@ -24,19 +24,19 @@
       ]
     },
     {
-      "name": "calm",
-      "does": "covers the window while you're away with a quiet meadow and every channel: how many need you and its last line; a click opens one",
-      "add": "kiwi mod add github.com/kiwi-init/mods/calm",
+      "name": "afk",
+      "does": "covers the window while you're away (AFK) with the scene and every channel: how many need you and its last line; a click opens one",
+      "add": "kiwi mod add github.com/kiwi-init/mods/afk",
       "needs": [
-        "idle",
+        "afk",
         "channels"
       ],
-      "commit": "12640801954c2ef8e7a214d45ab431101138146c",
-      "hash": "6f729c7a49961504f4b48c952f420873df08a9b9e4598180f73c0b339c538b35",
+      "commit": "87658ac6279173a5eb6ffc517ac67cd3cf61a03e",
+      "hash": "bbbf0751276dde74924832f59d1e1d2215a68491a1af6750b2e8edf699d12333",
       "icon": "icon.svg",
       "files": [
-        "calm.css",
-        "calm.tsx",
+        "afk.css",
+        "afk.tsx",
         "icon.svg",
         "index.tsx",
         "mod.json",
