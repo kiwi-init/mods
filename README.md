@@ -5,6 +5,7 @@ The mods that come with [Channels](https://github.com/kiwi-init/channels), one f
 | Mod | What it does |
 | --- | --- |
 | [github](github) | The channel's GitHub tab: its pull requests, issues and checks, and a panel for each. It comes with Channels. |
+| [calm](calm) | Covers the window while you're away with a quiet meadow and every channel: how many need you and its last line. A click opens one. It comes with Channels. |
 | [anatomy](anatomy) | Gives every agent a skill for interactive isometric figures, sent with `kiwi send --figure` |
 | [terminals](terminals) | Shows an agent's tmux pane or Rex block from its message or ⌘K, marks the ones waiting on you, and adds prefix K in tmux to go to one. It asks before it adds a line to `~/.tmux.conf` and Rex's `init.lua`. |
 
